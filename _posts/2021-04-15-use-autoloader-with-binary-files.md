@@ -105,8 +105,8 @@ for file in local_raw_file_path:
     with tarfile.open(file, "r:gz") as tar:
         tar.extractall(path=local_extract_file_path)
 ```
-> Since the extract from tar process (or unzip) runs only on the driver node and not in a distributed manner, the driver node may need to be resized accordingly.
 
+> Since the extract from tar process (or unzip) runs only on the driver node and not in a distributed manner, the driver node may need to be resized accordingly.
 
 1. Read and process the files extracted from tar archive in the "extract" directory.
 
